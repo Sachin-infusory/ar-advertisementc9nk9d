@@ -19,14 +19,14 @@
       gesture-detector
     >
       <a-assets>
-        <a-asset-item id="animated-asset" src="assets/cyberpunk_building.glb"></a-asset-item>
+        <a-asset-item id="animated-asset" src="assets/Family_tirur.glb"></a-asset-item>
       </a-assets>
 
       <a-marker
         id="animated-marker"
         type="pattern"
         preset="custom"
-        url="assets/marker.patt"
+        url="assets/pattern.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -34,8 +34,8 @@
       >
         <a-entity
           id="bowser-model"
-          scale="0.1 0.1 0.1"
-          position="0 0 0"
+          scale="20 20 20"
+          position="0 0 1"
           rotation="0 0 0" 
           animation-mixer="loop: repeat"
           gltf-model="#animated-asset"
